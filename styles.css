@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.table {
+  display: flex;
+}
+
+.table-col-titles {
+  min-width: 300px;
+  width: 100%;
+}
+
+.temperature {
+  width: 100%;
+  display: flex;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.temperature div {
+  padding: 10px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  
+}
+
+.temperature-name {
+  min-width: 175px;
+  text-align: center;
+}
+
+.temperature-data {
+  font-size: 14px;
+  width: 59px;
+  text-align: center;
+}
+
+.temperature-measure {
+  width: 66px;
+  text-align: center;
+}
+
+.speed-wind {
+  width: 100%;
+  display: flex;
+  border-left: 1px solid black;
+}
+
+.speed-wind div {
+  padding: 10px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.speed-wind-name {
+  min-width: 175px;
+  text-align: center;
+}
+
+.speed-wind-data {
+  min-width: 59px;
+  text-align: center;
+}
+
+.speed-wind-measure {
+  min-width: 66px;
+  text-align: center;
+}
+
+.parameter {
+  width: 100%;
+  display: flex;
+}
+
+.name {
+  min-width: 235px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.measure {
+  min-width: 66px;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.table-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.branch-cols {
+  display: flex;
+}
+
+.branch-name {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.well-list {
+  display: flex;
+  width: 100%;
+}
+
+.well-item {
+  padding: 10px;
+  flex-grow: 1;
+  text-align: center;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.list {
+  display: flex;
+  width: 100%;
+}
+
+.item {
+  padding: 10px;
+  flex-grow: 1;
+  text-align: center;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
