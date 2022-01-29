@@ -52,7 +52,7 @@ export class Render {
 		const table = document.querySelector('.table');
 
 		table.innerHTML += `
-		<div class="table-box">
+		<div class="table-box" id="${branch.name}-box">
 		<div class="table-row">
 				<div class="branch-name">
 					${branch.name}
@@ -165,18 +165,25 @@ export class Render {
 							<div class="cond-g item text-bold">${well.tKgs}</div>
 						</div>
 					</div>
-					<div class="table-row">
-						<div class="cond-g list">
-							<div class="cond-g item text-bold">${well.pGsk}</div>
-						</div>
-					</div>
-					<div class="table-row">
-						<div class="cond-g list">
-							<div class="cond-g item text-bold">${well.tGsk}</div>
-						</div>
-					</div>
+					
 				</div>
-			`
+			`;
 		}
+
+			const branchCols = document.querySelector(`#${branch.name}-box`);
+			branchCols.innerHTML += `
+			<div class="table-row">
+						<div class="cond-g list">
+							<div class="cond-g item text-bold">${branch.wells[branch.wells.length - 1].pGsk}</div>
+						</div>
+					</div>
+					<div class="table-row">
+						<div class="cond-g list">
+							<div class="cond-g item text-bold">${branch.wells[branch.wells.length - 2].tGsk}</div>
+						</div>
+					</div>
+			`;
+
+		
 	}
 }
