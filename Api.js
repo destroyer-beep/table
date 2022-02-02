@@ -1,5 +1,5 @@
 export class Api {
   dinamicParameter(well, nameParameter) {
-    return null;
+    return Math.floor(Math.random()*100);
   }
 }
